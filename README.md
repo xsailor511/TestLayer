@@ -1,10 +1,10 @@
 #TestLayer
 * 该项目是一个ios工程
 * 该项目用来测试为UIView添加边框
-* 涉及CAShapeLayer，CGMutablePathRef等绘图类的实用
+* 涉及CAShapeLayer，CGMutablePathRef等绘图类的使用
 
 #怎么使用
-* 一共定义了三个类，ButtonUtil，ViewWithBorder，UIView+Border
+* 一共定义了四个类，ButtonUtil，ViewWithBorder，UIView+Border,UIView+WYImage
 * 分别以不同的方式给view添加边框
 * ButtonUtil是以工具类的形式，其实用例子如下
     
