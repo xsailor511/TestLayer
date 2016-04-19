@@ -18,6 +18,7 @@
 		791C91961C4E48EE00C26546 /* ButtonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 791C91951C4E48EE00C26546 /* ButtonUtil.m */; };
 		791C91991C4E53B100C26546 /* ViewWithBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 791C91981C4E53B100C26546 /* ViewWithBorder.m */; };
 		791C919F1C4F26E300C26546 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 791C919E1C4F26E300C26546 /* UIView+Border.m */; };
+		792B6AF81CC60B510020D093 /* UIView+WYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 792B6AF71CC60B510020D093 /* UIView+WYImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		791C91981C4E53B100C26546 /* ViewWithBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWithBorder.m; sourceTree = "<group>"; };
 		791C919D1C4F26E300C26546 /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		791C919E1C4F26E300C26546 /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		792B6AF61CC60B510020D093 /* UIView+WYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WYImage.h"; sourceTree = "<group>"; };
+		792B6AF71CC60B510020D093 /* UIView+WYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WYImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				791C91981C4E53B100C26546 /* ViewWithBorder.m */,
 				791C919D1C4F26E300C26546 /* UIView+Border.h */,
 				791C919E1C4F26E300C26546 /* UIView+Border.m */,
+				792B6AF61CC60B510020D093 /* UIView+WYImage.h */,
+				792B6AF71CC60B510020D093 /* UIView+WYImage.m */,
 			);
 			path = TestLayer;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				791C91661C4E449F00C26546 /* AppDelegate.m in Sources */,
 				791C91631C4E449F00C26546 /* main.m in Sources */,
 				791C91991C4E53B100C26546 /* ViewWithBorder.m in Sources */,
+				792B6AF81CC60B510020D093 /* UIView+WYImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +520,7 @@
 				791C918D1C4E44A000C26546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		791C918E1C4E44A000C26546 /* Build configuration list for PBXNativeTarget "TestLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				791C91901C4E44A000C26546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		791C91911C4E44A000C26546 /* Build configuration list for PBXNativeTarget "TestLayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +538,7 @@
 				791C91931C4E44A000C26546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

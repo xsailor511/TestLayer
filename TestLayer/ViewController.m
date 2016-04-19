@@ -10,6 +10,8 @@
 #import "ButtonUtil.h"
 #import "ViewWithBorder.h"
 #import "UIView+Border.h"
+#import "UIView+WYImage.h"
+
 @interface ViewController ()
 
 @end
@@ -20,6 +22,8 @@
     [super viewDidLoad];
     [self testButtonBorder];
     [self testCal];
+    
+    [self testViewToImage];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -89,6 +93,42 @@
     [viewCategory2 setBackgroundColor:[UIColor blueColor]];
     [viewCategory2 addDottedBorder:[UIColor blackColor] borderWidth:1 borders:UIViewCategoryBorderAllBorders];
     [self.view addSubview:viewCategory2];
+}
+
+-(void)testViewToImage{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
+    
+    [view setBackgroundColor:[UIColor yellowColor]];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+    [label setFont:[UIFont systemFontOfSize:17]];
+    [label setTextAlignment:NSTextAlignmentCenter];
+    [label setTextColor:[UIColor blackColor]];
+    label.text = @"这些文字是在一张图片上的";
+    [view addSubview:label];
+    
+    UIImage *image = [view imageFromView];
+    
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+    
+}
+
+- (void) image: (UIImage *) image
+didFinishSavingWithError: (NSError *) error
+   contextInfo: (void *) contextInfo{
+    NSString *msg = nil ;
+
+    if(error != NULL){
+        msg = @"保存图片失败" ;
+
+    }else{
+
+        msg = @"保存图片成功" ;
+
+    }
+    
+    NSLog(@"MSG = %@",msg);
+    
 }
 
 @end

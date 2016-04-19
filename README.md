@@ -53,3 +53,20 @@
     [viewCategory2 addDottedBorder:[UIColor blackColor] borderWidth:1 borders:UIViewCategoryBorderAllBorders];
     [self.view addSubview:viewCategory2];
 ```
+
+* UIView+WYImage 可以直接将UIView转换成Image图像
+
+```c
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
+    
+    [view setBackgroundColor:[UIColor yellowColor]];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+    [label setFont:[UIFont systemFontOfSize:17]];
+    [label setTextAlignment:NSTextAlignmentCenter];
+    [label setTextColor:[UIColor blackColor]];
+    label.text = @"这些文字是在一张图片上的";
+    [view addSubview:label];
+
+    UIImage *image = [view imageFromView];
+```
